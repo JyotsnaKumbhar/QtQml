@@ -1,0 +1,19 @@
+import QtQuick 2.15
+
+Rectangle {
+    width: 200; height: 200
+    color: "lightblue"
+
+    Rectangle {
+        id: box
+        width: 50; height: 50
+        color: "red"
+        x: 0
+
+        NumberAnimation on x {
+            to: 150
+            duration: 1000   // 1 second
+            loops: Animation.Infinite
+        }
+    }
+}
