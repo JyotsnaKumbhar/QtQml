@@ -1,0 +1,7 @@
+NumberAnimation {
+    target: box
+    property: "x"
+    to: 150
+    duration: 1000
+    easing.type: Easing.InOutBounce
+}
