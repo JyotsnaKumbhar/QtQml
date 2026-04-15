@@ -1,0 +1,23 @@
+Rectangle {
+    width: 200; height: 200
+
+    Rectangle {
+        id: box
+        width: 50; height: 50
+        color: "green"
+        x: 0
+    }
+
+    PropertyAnimation {
+        id: moveAnim
+        target: box
+        property: "x"
+        to: 150
+        duration: 1000
+    }
+
+    MouseArea {
+        anchors.fill: parent
+        onClicked: moveAnim.start()
+    }
+}
