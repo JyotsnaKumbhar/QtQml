@@ -1,0 +1,6 @@
+SequentialAnimation {
+    running: true
+
+    NumberAnimation { target: box; property: "x"; to: 150; duration: 1000 }
+    NumberAnimation { target: box; property: "y"; to: 150; duration: 1000 }
+}
