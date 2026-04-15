@@ -1,0 +1,15 @@
+Rectangle {
+    id: box
+    width: 50; height: 50
+    color: "blue"
+    x: 0
+
+    Behavior on x {
+        NumberAnimation { duration: 500 }
+    }
+
+    MouseArea {
+        anchors.fill: parent
+        onClicked: box.x = 150
+    }
+}
