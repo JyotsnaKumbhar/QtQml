@@ -1,0 +1,19 @@
+Rectangle {
+    id: box
+    width: 50; height: 50
+    color: "purple"
+
+    states: State {
+        name: "moved"
+        PropertyChanges { target: box; x: 150 }
+    }
+
+    transitions: Transition {
+        NumberAnimation { properties: "x"; duration: 1000 }
+    }
+
+    MouseArea {
+        anchors.fill: parent
+        onClicked: box.state = "moved"
+    }
+}
